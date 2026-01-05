@@ -1,0 +1,59 @@
+.transaction-list-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.table-wrapper {
+  overflow-x: auto; /* Permet le défilement sur mobile */
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.transaction-table th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #edf2f7;
+  color: #718096;
+  font-size: 14px;
+}
+
+.transaction-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #edf2f7;
+  font-size: 15px;
+}
+
+/* Couleurs selon le type */
+.income .amount-cell { color: #48bb78; font-weight: bold; }
+.expense .amount-cell { color: #f56565; font-weight: bold; }
+
+.category-tag {
+  background: #edf2f7;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #4a5568;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+  transform: scale(1.2);
+}
